@@ -14,7 +14,7 @@ paver.setuputils.install_distutils_tasks()
 sys.path.append(os.getcwd())
 
 # The project name, for use below.
-project_name = 'demoproject'
+project_name = 'demobook'
 
 master_url = 'http://127.0.0.1:8000'
 if not master_url:
