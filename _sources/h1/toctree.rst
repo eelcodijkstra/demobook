@@ -9,3 +9,4 @@ Hoofdstuk 1
 
    h1s1.rst
    h1s2.rst
+   h1rest.rst
