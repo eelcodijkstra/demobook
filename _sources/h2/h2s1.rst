@@ -1,0 +1,6 @@
+.. h2s1
+
+Sectie 1
+========
+
+Dit is sectie 1 van h2.
