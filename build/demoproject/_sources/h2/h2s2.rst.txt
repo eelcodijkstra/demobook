@@ -1,6 +1,0 @@
-.. h2s2.rst
-
-Sectie 2
-========
-
-Dit is sectie 2 van H2.

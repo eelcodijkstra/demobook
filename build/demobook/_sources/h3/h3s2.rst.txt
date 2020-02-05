@@ -1,0 +1,6 @@
+.. h3s2
+
+Sectie 2
+========
+
+Dit is sectie 2 van h3.

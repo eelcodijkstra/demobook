@@ -1,4 +1,0 @@
-Sectie 1
-========
-
-dit is sectie 1 van h1.
