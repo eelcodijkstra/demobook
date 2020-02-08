@@ -1,4 +1,82 @@
-Sectie 2
-========
+Bouwstenen van programma's
+==========================
 
-Dit is sectie 2 van h1.
+We hebben hiervoor een aantal voorbeelden gezien van scripts of programma's
+waarmee je een proces beschrijft: bakken, breien, musiceren, enz.
+
+Al dit soort scripts bestaan uit elementaire opdrachten en manieren om opdrachten samen te stellen.
+
+Elementaire opdrachten voor bakken zijn bijvoorbeeld: doe de bloem in de kom;
+voeg de melk toe aan de bloem in de kom; meng het meel en de melk; enz.
+
+Elementaire opdrachten voor breien zijn bijvoorbeeld: recht, averecht.
+
+Op welke manieren kun je opdrachten samenstellen tot een volledig script?
+
+* opeenvolging: als in een script A staat gevolgd B, dan betekent dat meestal:
+  eerst A dan B.
+* herhaling:
+
+  * herhaal een vast aantal, zoals bij een muziekstuk (2 maal herhalen),
+    of in een breipatroon: zet met dubbele draad 30 steken op.
+  * herhaal totdat je een bepaalde toestand bereikt hebt, bijvoorbeeld bij bakken:
+    meng de melk door de bloem *totdat het een glad deeg is*.
+* procedure: deelscript met een naam.
+  Veelgebruikte combinaties van stappen krijgen vaak een naam,
+  zodat je deze als deelscript in een groter script kunt gebruiken.
+  Bijvoorbeeld:
+
+  * bij breien: gerstekorrelsteek;
+  * bij bakken: souce hollandaise, banketbakkersroom, enz.
+    Je kunt in dit geval vrijwel elk recept weer gebruiken als onderdeel van een groter recept.
+
+Een andere manier van samenstellen is *parallellisme*: stappen die tegelijkertijd uitgevoerd moeten worden.
+Dit kom je vooral tegen bij muziek: meerdere stemmen tegelijk, en bij bakken:
+je moet soms een aantal deelrecepten tegelijk bereiden om de resultaten dan te combineren.
+Planning kan in dit laatste geval erg belangrijk zijn.
+
+Turtle-voorbeelden
+------------------
+
+In het onderstaande programma zie je een aantal voorbeelden van elementaire opdrachten en samenstellingen:
+
+.. activecode:: ch03_12
+    :nocodelens:
+
+    import turtle               # allows us to use the turtles library
+    wn = turtle.Screen()        # creates a graphics window
+    alex = turtle.Turtle()      # create a turtle named alex
+
+    def square(size):           # define a function for alex to draw a square
+      for i in range(4):        # repeat 4 times:
+        alex.forward(size)
+        alex.right(90)
+
+    square(100)                 # draw a square
+    alex.right(90)
+    square(50)                  # draw another square
+
+In dit voorbeeld zie je de volgende elementen:
+
+* opeenvolging: A gevolgd door B, ofwel eerst A, dan B,
+  schrijf je als `A; B` of als `A` en op de volgende regel `B`.
+* herhaling: `for i in range(3): A` betekent  `A; A; A`
+* procedure: de procedure voor het tekenen van een vierkant krijgt de naam `square`;
+  hiervoor gebruik je de acties die eronder staan ingesprongen.
+
+.. rubric:: Opmerkingen
+
+* in Python groepeer je acties van een samenstelling door deze te laten inspringen.
+  Dit zie je bij de procedure en bij de herhaling.
+* een procedure heet in Python een *function*.
+  (Deze term verschilt per programmeertaal.)
+* we zullen later nog een manier van samenstellen zien: de selectie.
+  in programma's heb je die hard nodig, bij bakken of breien niet.
+
+
+Opdrachten
+----------
+
+1. geef enkele voorbeelden van elementaire opdrachten en samenstellingen voor ZZZ
+
+2. geef voor een eigen voorbeeld met scripts voorbeelden van elementaire opdrachten en samenstellingen.

@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>1.2. Sectie 2 &#8212; Demo book</title>
+    <title>1.2. Bouwstenen van programma’s &#8212; Demo book</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -357,9 +357,90 @@
 
 <div class="container" id="main-content" role="main">
   
-  <div class="section" id="sectie-2">
-<h1><span class="section-number">1.2. </span>Sectie 2<a class="headerlink" href="#sectie-2" title="Permalink to this headline">¶</a></h1>
-<p>Dit is sectie 2 van h1.</p>
+  <div class="section" id="bouwstenen-van-programma-s">
+<h1><span class="section-number">1.2. </span>Bouwstenen van programma’s<a class="headerlink" href="#bouwstenen-van-programma-s" title="Permalink to this headline">¶</a></h1>
+<p>We hebben hiervoor een aantal voorbeelden gezien van scripts of programma’s
+waarmee je een proces beschrijft: bakken, breien, musiceren, enz.</p>
+<p>Al dit soort scripts bestaan uit elementaire opdrachten en manieren om opdrachten samen te stellen.</p>
+<p>Elementaire opdrachten voor bakken zijn bijvoorbeeld: doe de bloem in de kom;
+voeg de melk toe aan de bloem in de kom; meng het meel en de melk; enz.</p>
+<p>Elementaire opdrachten voor breien zijn bijvoorbeeld: recht, averecht.</p>
+<p>Op welke manieren kun je opdrachten samenstellen tot een volledig script?</p>
+<ul class="simple">
+<li><p>opeenvolging: als in een script A staat gevolgd B, dan betekent dat meestal:
+eerst A dan B.</p></li>
+<li><p>herhaling:</p>
+<ul>
+<li><p>herhaal een vast aantal, zoals bij een muziekstuk (2 maal herhalen),
+of in een breipatroon: zet met dubbele draad 30 steken op.</p></li>
+<li><p>herhaal totdat je een bepaalde toestand bereikt hebt, bijvoorbeeld bij bakken:
+meng de melk door de bloem <em>totdat het een glad deeg is</em>.</p></li>
+</ul>
+</li>
+<li><p>procedure: deelscript met een naam.
+Veelgebruikte combinaties van stappen krijgen vaak een naam,
+zodat je deze als deelscript in een groter script kunt gebruiken.
+Bijvoorbeeld:</p>
+<ul>
+<li><p>bij breien: gerstekorrelsteek;</p></li>
+<li><p>bij bakken: souce hollandaise, banketbakkersroom, enz.
+Je kunt in dit geval vrijwel elk recept weer gebruiken als onderdeel van een groter recept.</p></li>
+</ul>
+</li>
+</ul>
+<p>Een andere manier van samenstellen is <em>parallellisme</em>: stappen die tegelijkertijd uitgevoerd moeten worden.
+Dit kom je vooral tegen bij muziek: meerdere stemmen tegelijk, en bij bakken:
+je moet soms een aantal deelrecepten tegelijk bereiden om de resultaten dan te combineren.
+Planning kan in dit laatste geval erg belangrijk zijn.</p>
+<div class="section" id="turtle-voorbeelden">
+<h2><span class="section-number">1.2.1. </span>Turtle-voorbeelden<a class="headerlink" href="#turtle-voorbeelden" title="Permalink to this headline">¶</a></h2>
+<p>In het onderstaande programma zie je een aantal voorbeelden van elementaire opdrachten en samenstellingen:</p>
+
+<div data-childcomponent="ch03_12" class="runestone explainer ac_section alert alert-warning">
+
+<textarea data-component="activecode" id=ch03_12 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''      
+           data-wasm=/_static>
+import turtle               # allows us to use the turtles library
+wn = turtle.Screen()        # creates a graphics window
+alex = turtle.Turtle()      # create a turtle named alex
+
+def square(size):           # define a function for alex to draw a square
+  for i in range(4):        # repeat 4 times:
+    alex.forward(size)
+    alex.right(90)
+
+square(100)                 # draw a square
+alex.right(90)
+square(50)                  # draw another square
+</textarea>
+</div>
+<p>In dit voorbeeld zie je de volgende elementen:</p>
+<ul class="simple">
+<li><p>opeenvolging: A gevolgd door B, ofwel eerst A, dan B,
+schrijf je als <cite>A; B</cite> of als <cite>A</cite> en op de volgende regel <cite>B</cite>.</p></li>
+<li><p>herhaling: <cite>for i in range(3): A</cite> betekent  <cite>A; A; A</cite></p></li>
+<li><p>procedure: de procedure voor het tekenen van een vierkant krijgt de naam <cite>square</cite>;
+hiervoor gebruik je de acties die eronder staan ingesprongen.</p></li>
+</ul>
+<p class="rubric">Opmerkingen</p>
+<ul class="simple">
+<li><p>in Python groepeer je acties van een samenstelling door deze te laten inspringen.
+Dit zie je bij de procedure en bij de herhaling.</p></li>
+<li><p>een procedure heet in Python een <em>function</em>.
+(Deze term verschilt per programmeertaal.)</p></li>
+<li><p>we zullen later nog een manier van samenstellen zien: de selectie.
+in programma’s heb je die hard nodig, bij bakken of breien niet.</p></li>
+</ul>
+</div>
+<div class="section" id="opdrachten">
+<h2><span class="section-number">1.2.2. </span>Opdrachten<a class="headerlink" href="#opdrachten" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>geef enkele voorbeelden van elementaire opdrachten en samenstellingen voor ZZZ</p></li>
+<li><p>geef voor een eigen voorbeeld met scripts voorbeelden van elementaire opdrachten en samenstellingen.</p></li>
+</ol>
+</div>
 </div>
 
 
